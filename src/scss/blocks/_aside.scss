@@ -1,0 +1,39 @@
+.aside{
+  display: none;
+  width: 30%;
+  margin-left: rem(25);
+  float: right;
+  border: rgba($color: #000000, $alpha: 0.25) solid 2px;
+  border-radius: rem(25);
+  padding: rem(15);
+  &__list{
+    margin-left: rem(5);
+  }
+  &__item {
+    padding: rem(5);
+    border-radius: rem(15); 
+    margin-bottom: rem(5);
+    transition: 1s background;
+    a{
+      color: #000;
+      display: flex;
+      align-items:center;
+    }
+  }
+  &__logo{
+    margin-right: rem(7.5);
+    img{
+      height: rem(35);
+    }
+  }
+  &__title{
+    font-size: rem(24);
+    font-weight: 600;
+    margin-bottom: rem(20);
+    position: relative;
+  }
+  &__name{
+    font-size: rem(18);
+    font-weight: 400;
+  }
+}

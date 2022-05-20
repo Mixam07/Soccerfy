@@ -1,0 +1,116 @@
+.matches{
+  &__header{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: rem(10);
+    display: flex;
+    padding: rem(3) rem(10);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(15);
+  }
+  &__wrapper{
+    margin-bottom: rem(25);
+  }
+  &__league{
+    display: flex;
+    align-items: center;
+  }
+  &__name{
+    margin: 0 rem(5);
+    font-weight: 500;
+    line-height: em(24, 14);
+    color: #000000;
+    font-size: rem(14);
+  }
+  &__btns{
+    display: flex;
+    align-items: center;
+  }
+  &__btn{
+    margin: 0 rem(5);
+    display: block;
+    height: rem(18);
+    img{
+      height: 100%;
+    }
+  }
+  &__item{
+    background: #F3F3F3;
+    margin-bottom: rem(10);
+    padding: rem(20) rem(10);
+    display: flex;
+    justify-content: center;
+    border-radius: rem(10);
+    transition: 1s background;
+    position: relative;
+  }
+  .live{
+    position: relative;
+    &::before{
+      content: "Live";
+      top: 5px;
+      right: 9px;
+      position: absolute;
+      font-weight: 700;
+      font-size: rem(14);
+      line-height: em(14, 14);
+      text-transform: uppercase;
+      color: #FC1B15;
+    }
+  }
+  &__star{
+    position: absolute;
+    top: rem(2.5);
+    left: rem(2.5);
+    height: rem(20);
+    img{
+      height: 100%;
+    }
+  }
+  &__club{
+    display: flex;
+    max-width: rem(125);
+    align-items: center;
+  }
+  .first-club{
+    .matches__name-club{
+      margin-right: rem(5);
+    }
+  }
+  .second-club{
+    .matches__name-club{
+      margin-left: rem(5);
+    }
+  }
+  &__name-club{
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: em(24, 14);
+    text-align: center;
+    color: #14142B;
+  }
+  &__score{
+    display: flex;
+    align-items:center;
+    font-weight: 500;
+    font-size: rem(28);
+    line-height: em(24, 28);
+    color: #000000;
+    margin: 0 rem(2.5);
+  }
+  &__dash{
+    margin: 0 rem(2.5);
+  }
+  &__img{
+    height: rem(24);
+    img{
+      height: 100%;
+    }
+  }
+  &__img-club{
+    height: rem(40);
+    img{
+      height: 100%;
+    }
+  }
+}

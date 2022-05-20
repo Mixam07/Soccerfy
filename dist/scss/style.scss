@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:wght@400;500;700&display=swap');
+@import "base/nullstyle";
+@import "base/mixins";
+@import "base/variables";
+@import "base/function";
+
+.container{
+    max-width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+button,
+a{
+    cursor: pointer;
+    background: none;
+}
+body{
+    padding-top: rem(78);
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+main{
+    flex: 1 1;
+}
+section{
+    margin-bottom: rem(20);
+}
+.best{
+    display: none;
+    &_active{
+        display: block;
+    }
+}
+*{
+    font-family: 'Roboto';
+}
+.yellow{
+    background: #E8CA0C;
+}
+.gray{
+    background: #E9E9E9;
+}
+.red{
+    background: #FC1B15;
+}
+.green{
+    background: green;
+}
+
+@import "blocks/header";
+@import "blocks/slider";
+@import "blocks/matches";
+@import "blocks/description";
+@import "blocks/table";
+@import "blocks/aside";
+@import "blocks/footer";
+@import "blocks/best";
+@import "blocks/information";
+
+
+@import "blocks/media";

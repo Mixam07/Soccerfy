@@ -1,0 +1,146 @@
+.table{
+  position: relative;
+  display: none;
+  &_active{
+    display: block;
+  }
+  &::after{
+    position: absolute;
+    width: 100%;
+    height: rem(24);
+    z-index: -1;
+    content: "";
+    top: rem(10);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+  }
+  &__th,
+  &__td{
+    padding: rem(5) 0;
+    text-align: center;
+  }
+  &__wrapper{
+    width: 100%;
+    border-spacing: rem(5) rem(10);
+    margin: -10px -5px;
+  }
+  &__name{
+    color: #000;
+    max-width: rem(97.5);
+    font-size: rem(12);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .team{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: rem(6);
+    line-height: em(30, 6);
+    letter-spacing: 0;
+    img{
+      margin-right: rem(2.5);
+      height: rem(26);
+    }
+    &-main{
+      text-align: start;
+    }
+  }
+  .f{
+    display: none;
+  }
+  &__td{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000000;
+    font-size: rem(10);
+    line-height: em(14, 10);
+    letter-spacing: 0.02em;
+  }
+  .w{
+    background: #6FCF97;
+    &::after{
+      content: "w";
+    }
+  }
+  .l{
+    background: #FC1B15;
+    &::after{
+      content: "l";
+    }
+  }
+  .d{
+    background: #E8CA0C;
+    &::after{
+      content: "d";
+    }
+  }
+  &__text{
+    &::after{
+      position: absolute;
+      font-weight: 400;
+      content: "";
+      font-size: rem(12);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: em(10, 12);
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+    display: none;
+    position: relative;
+    border-radius: 100%;
+    height: rem(25);
+    width: rem(25);
+    &:nth-child(1){
+      display: block;
+    }
+  }
+  .last-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .result-matches{
+    display: none;
+  }
+  &__tr{
+    position: relative;
+    &::after{
+      position: absolute;
+      content: "";
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: #D3D3E0;
+      border-radius: rem(10);
+    }
+  }
+  .number{
+    font-weight: 700;
+    font-size: rem(18);
+    line-height: em(14, 18);
+    text-align: center;
+    border-radius: rem(10) 0 0 rem(10);
+    max-width: rem(32);
+    &-main{
+      margin-right: rem(20);
+      
+    }
+  }
+  &__tr{
+    &-main{
+      font-weight: 500;
+      font-size: rem(14);
+      line-height: em(14, 14);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+  }
+}

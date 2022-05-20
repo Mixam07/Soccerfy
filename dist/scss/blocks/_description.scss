@@ -1,0 +1,67 @@
+.description{
+  &__wrapper{
+    padding-top: rem(10);
+  }
+  &__name{
+    font-weight: 700;
+    font-size: rem(18);
+    line-height: em(14, 18);
+    color: #14142B;
+    margin-bottom: rem(10);
+  }
+  &__head{
+    display: flex;
+  }
+  &__img-star{
+    height: rem(20);
+    img{
+      height: 100%;
+    }
+  }
+  &__img-league{
+    margin-right: rem(10);
+    border-radius: rem(10);
+    position: relative;
+    height: rem(75);
+    img{
+      background: #fff;
+      border-radius: rem(10);
+      height: 100%;
+    }
+    &::before{
+      position: absolute;
+      content: '';
+      top: rem(2);
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      border-radius: rem(10);
+      background: #C4C4C4;
+    }
+  }
+  &__years{
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: em(14, 14);
+    color: #14142B;
+    margin-bottom: rem(10);
+  }
+  &__btns{
+    margin-top: rem(35);
+    display: flex;
+    column-gap: rem(1);
+  }
+  &__button{
+    width: 100%;
+    background: #FC1B15;
+    text-align: center;
+    padding: rem(5) rem(2);
+    font-weight: 400;
+    font-size: rem(8);
+    line-height: em(10, 8);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}

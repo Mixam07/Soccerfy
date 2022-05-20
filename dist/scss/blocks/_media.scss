@@ -1,0 +1,302 @@
+@media (min-width: rem(375)){
+  .table{
+    &__name{
+      max-width: rem(155);
+    }
+  }
+  .matches{
+    &__club{
+      max-width: 100%;
+      width: 100%;
+    }
+    .first-club{
+      justify-content: flex-end;
+    }
+  }
+  .description{
+    &__button{
+      font-size: rem(14);
+    }
+  }
+}
+@media (min-width: rem(425)){
+  .table{
+    &__name{
+      max-width: rem(180);
+    }
+    .team{
+      img{
+        margin-right: rem(10);
+      }
+    }
+  }
+  .matches{
+    &__name-club{
+      text-align: start;
+    }
+  }
+  .information{
+    &__table{
+      margin: rem(-10) 0;
+      border-spacing: 0 rem(10);
+    }
+    .player{
+      flex-direction: row;
+      align-items: center;
+    }
+    .matches-player{
+      display: table-cell;
+    }
+  }
+}
+@media (min-width: rem(576)){
+  .container{
+    max-width: rem(540);
+  }
+  .information{
+    .country{
+      display: table-cell;
+    }
+    .number{
+      &::after{
+        height: rem(30);
+        width: rem(30);
+      }
+    }
+    .age,.number-player{
+      display: table-cell;
+    }
+  }
+  .matches{
+    &__score{
+      margin: 0 rem(10);
+    }
+    &__dash{
+      margin: 0 rem(10);
+    }
+    &__item{
+      padding: rem(10) rem(5);
+    }
+    &__name{
+      font-size: rem(16);
+    }
+  }
+  .table{
+    &__name{
+      max-width: 100%;
+    }
+    .result-matches{
+      display:table-cell;
+    }
+  }
+}
+@media (min-width: rem(762)){
+  .container{
+    max-width: rem(720);
+  }
+  .information{
+    .goals,
+    .assistants{
+      display: table-cell;
+    }
+    .cards{
+      display: table-cell;
+    }
+  }
+  .slider{
+    &__window{
+      height: rem(50);
+    }
+  }
+  .matches{
+    &__name{
+      font-size: rem(18);
+    }
+  }
+  .slider{
+    display: none;
+  }
+  .main{
+    .matches{
+      width: calc(70% - 1.5625rem);
+      float: left;
+    }
+  }
+  .table{
+    &__text{
+      width: rem(30);
+      height: rem(30);
+      &:nth-child(2),
+      &:nth-child(3){
+        display: block;
+      }
+    }
+    .last-result{
+      justify-content: space-around;
+    }
+    &__wrapper{
+      border-spacing: rem(10);
+    }
+    .team{
+      img{
+        height: rem(40);
+      }
+    }
+    &__name{
+      font-size: rem(20);
+    }
+    .last-result{
+      margin-left: rem(15);
+    }
+    .number{
+      font-size: rem(28);
+      //padding: 0 rem(7.5);
+    }
+  }
+  .aside{
+    display: block;
+  }
+}
+@media (min-width: rem(992)){
+  .container{
+    max-width: rem(940);
+  }
+  .information{
+    .age{
+      display: table-cell;
+    }
+    &__td{
+      font-size: rem(24);
+    }
+  }
+  .slider{
+    &__window{
+      height: rem(75);
+    }
+  }
+  .matches{
+    &__img-club{
+      height: rem(55);
+      img{
+        height: 100%;
+      }
+    }
+    &__name{
+      font-size: rem(20);
+    }
+    &__img{
+      height: rem(35);
+      margin-right: rem(5);
+    }
+    &__btns{
+      height: rem(25);
+    }
+    &__star{
+      height: rem(25);
+      top: 10px;
+      left: 10px;
+    }
+    .live{
+      &::before{
+        font-size: rem(20);
+      }
+    }
+    &__name-club{
+      font-size: rem(20);
+    }
+    .first-club{
+      .matches__name-club{
+        margin-right: rem(10);
+      }
+    }
+    .second-club{
+      .matches__name-club{
+        margin-left: rem(10);
+      }
+    }
+    &__item{
+      &:hover{
+        background: #D3D3E0;
+      }
+    }
+  }
+  .table{
+    &__text{
+      &:nth-child(4),
+      &:nth-child(5){
+        display: block;
+      }
+    }
+    .f{
+      width: rem(250);
+    }
+    &__td{
+      font-size: rem(18);
+      line-height: em(14, 18);
+    }
+  }
+  .header{
+    &__item{
+      img{
+        height: 55%;
+      }
+      &:hover{
+        background: rgba($color: #000000, $alpha: 0.075);
+      }
+    }
+  }
+  .aside{
+    padding: rem(25);
+    &__title{
+      font-size: rem(28);
+    }
+    &__item{
+      &:hover{
+        background: #D3D3E0;
+      }
+    }
+  }
+  .footer{
+    &__href{
+      &:hover{
+        &::before,
+        &::after{
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+  .best{
+    &__wrapper{
+      display: grid;
+      gap: rem(50);
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: rem(50);
+    }
+    &__item{
+      margin: 0;
+    }
+    &__tr{
+      font-size: rem(20);
+    }
+    &__th{
+      font-size: rem(24);
+    }
+    .number{
+      &::after{
+        width: rem(25);
+        height: rem(25);
+      }
+    }
+  }
+}
+@media (min-width: rem(1200)){
+  .container{
+    max-width: rem(1150);
+  }
+  .matches{
+    &__name{
+      font-size: rem(22);
+    }
+  }
+}

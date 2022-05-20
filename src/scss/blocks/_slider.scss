@@ -1,0 +1,41 @@
+.slider{
+  &__wrapper{
+    border: 1px solid #FC1B15;
+    border-radius: rem(10);
+    padding: rem(10);
+    display: flex;
+    justify-content: space-between;
+  }
+  &__window{
+    width: calc(100% - 3.125rem - 1.25rem - 1.25rem);
+    overflow: hidden;
+    height: rem(40);
+    position: relative;
+    margin: auto rem(10);
+  }
+  &__carrousel{
+    transition: 0.5s left;
+    display: flex;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  &__item{
+    width: rem(50);
+    display: block;
+    margin-right: rem(20);
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &__arrow{
+    height: rem(25);
+    margin: auto 0;
+    img{
+      height: 100%;
+    }
+  }
+}
